@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Data de Peliculas</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-    <img src="https://i0.wp.com/www.sir-apfelot.de/wp-content/uploads/2017/03/studio-ghibli-logo-620x288.png" alt="titulo">
-    <form>
-      <input type="text" name="search" id="listaPeliculas" placeholder="Buscar Pelicula...">
-      <button type="submit">Buscar</button>
-    </form>
+      <img
+        src="https://i0.wp.com/www.sir-apfelot.de/wp-content/uploads/2017/03/studio-ghibli-logo-620x288.png"
+        alt="titulo"
+      />
+      <form>
+        <input
+          type="text"
+          name="search"
+          id="listaPeliculas"
+          placeholder="Buscar Películas..."
+        />
+        <button type="submit">Buscar</button>
+      </form>
     </div>
-    
-    <div id="peliculas-container"></div>
+
+    <ul id="peliculas-container"></ul>
 
     <div id="root"></div>
     <script src="main.js" type="module"></script>

@@ -1,10 +1,9 @@
 // estas funciones son de ejemplo
-import data from "./data/ghibli/ghibli.js";
-// import data from './data/rickandmorty/rickandmorty.js';
-export const example = () => {
-  return 'example';
+import ghibli from "./data/ghibli/ghibli.js";
+export const getData = () => {
+  return ghibli.films;
 };
 
 export const anotherExample = () => {
-  return 'OMG';
+  return "OMG";
 };
