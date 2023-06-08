@@ -1,38 +1,37 @@
-import { getData } from "./data.js";
+import { getData, buscarPeliculas } from "./data.js";
 const peliculas = getData();
 //console.log(peliculas);
 
+
 function mostrarPeliculas(dataset) {
+  
   const contenedor = document.getElementById("peliculas-container");
+  contenedor.innerHTML= "";
   for (let i = 0; i < dataset.length; i++) {
-    const plantilla = `<li><img src = ${peliculas[i].poster}></img><p></p> ${peliculas[i].title} </li>`;
+    const plantilla = `<li><img src = ${dataset[i].poster}></img><p></p> ${dataset[i].title} </li>`;
     contenedor.innerHTML += plantilla;
-  }
+
+     }
+   
 }
+
 mostrarPeliculas(peliculas);
 
-const array = [
-  "0",
-  "1",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "11",
-  "12",
-  "13",
-  "14",
-  "15",
-  "16",
-  "17",
-  "18",
-  "19",
-];
-array.forEach(function () {
-  //console.log("array",array)
-});
+function inicio() {
+  const botonbusqueda = document.getElementById("buscar");
+  botonbusqueda.addEventListener("click", function (evento) {
+    evento.preventDefault();
+    const titulo = document.getElementById("listaPeliculas").value;
+
+    const encontrarPeliculas = buscarPeliculas(peliculas,titulo);
+    mostrarPeliculas(encontrarPeliculas);
+  });
+}
+inicio();
+
+function ordenarPeliculas(){
+
+}
+
+
+
