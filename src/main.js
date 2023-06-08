@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { getData } from "./data.js";
 const peliculas = getData();
 console.log(peliculas);
@@ -11,6 +10,8 @@ function mostrarPeliculas(dataset) {
   }
 }
 mostrarPeliculas(peliculas);
+
+
 
 const array = [
   "0",
@@ -37,3 +38,4 @@ const array = [
 array.forEach(function () {
   //console.log("array",array)
 });
+export default (inicio);

@@ -4,6 +4,4 @@ export const getData = () => {
   return ghibli.films;
 };
 
-export const anotherExample = () => {
-  return "OMG";
-};
+
