@@ -25,4 +25,10 @@ function inicio() {
 }
 inicio();
 
-function ordenarPeliculas() {}
+function ordenarPeliculas(){
+
+}
+
+
+mostrarPeliculas(peliculas);
+
