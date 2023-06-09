@@ -1,18 +1,38 @@
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+.container {
+  display: inline-block;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   
-  .container img {
-    max-width: 100%;
-    height: auto;
-  }
+}
 
-  .search-form {
-    margin-top: 20px;
-  }
+.container img {
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+}
 
-  
+.search-form {
+  margin-top: 20px;
+}
+* {
+width: 75%; /* Ancho de la tarjeta */
+background-color:whitesmoke; /* Color de fondo de la tarjeta */
+border-radius: 5px; /* Bordes redondeados de la tarjeta */
+padding: 10px; /* Espaciado interno de la tarjeta */
+text-align: center; 
+border-radius: 36px 36px 36px 36px;
+-moz-border-radius: 36px 36px 36px 36px;
+-webkit-border-radius: 36px 36px 36px 36px;
+border: 3px hidden #000000;
+display:grid;
+column-count: auto;
+font-size: inherit;
+vertical-align: baseline;
+
+}
+
+.custom-cursor {
+  cursor: url(/ImagenesHU/image01.gif), auto;
+}
