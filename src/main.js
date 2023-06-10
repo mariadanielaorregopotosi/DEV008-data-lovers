@@ -25,9 +25,20 @@ function inicio() {
 }
 inicio();
 
-function ordenarPeliculas(){
+mostrarPeliculas(peliculas);
 
-}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const cursor = document.getElementById("interactive-cursor");
+  
+  document.addEventListener("mousemove", function(event) {
+    const x = event.clientX - cursor.offsetWidth / 2;
+    const y = event.clientY - cursor.offsetHeight / 2;
+    cursor.style.left = x + "px";
+    cursor.style.top = y + "px";
+  });
+});
 
 
 mostrarPeliculas(peliculas);

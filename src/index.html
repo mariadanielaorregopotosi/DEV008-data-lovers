@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="custom-cursor"></div>
+    <div id="interactive-cursor"></div>
     <div class="container">
       <img
         src="https://i0.wp.com/www.sir-apfelot.de/wp-content/uploads/2017/03/studio-ghibli-logo-620x288.png"
@@ -20,13 +20,13 @@
           placeholder="Buscar Películas..."
         />
         <button id="buscar" type="submit">Buscar</button>
-        <select> 
+        <select id="añoDeLanzamiento">
           <option >Año de lanzamiento</option>
           <option>A-Z</option>
           <option>Z-A</option>
         </select>
-        <button type = "submit">Ordenar</button>
-        <select>
+        <button type = "submit" id="ordenar">Ordenar</button>
+        <select id="director">
           <option>Hayao Miyazaki</option>
           <option>Isao Takahata</option>
           <option>Yoshifumi Kondō</option>
@@ -34,7 +34,7 @@
           <option>Gorō Miyazaki</option>
           <option>Hiromasa Yonebayashi</option>
         </select>
-        <button type = "submit">Filtrar</button>
+        <button type = "submit" id="filtrar">Filtrar</button>
       </form>
     </div>
 
@@ -43,4 +43,18 @@
     <div id="root"></div>
     <script src="main.js" type="module"></script>
   </body>
+  <footer>
+    <div class="container grid-3">
+      <div class="copyright">
+        <h1>STUDIO GHIBLI</h1>
+        <p>Copyright &copy; 2023</p>
+      </div>
+      <div class="profiles">
+        <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><em class="fab fa-twitter fa-2x"></em><img src="https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png" alt="twitter"></a>
+        <a href="https://www.instagram.com/accounts/login/?source=reset_password"><em class="fab fa-instagram fa-2x"></em><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Instagram-Icon.png/769px-Instagram-Icon.png" alt="instagram"></a>
+        <a href="https://es-la.facebook.com/login/device-based/regular/login/"><em class="fab fa-facebook fa-2x"></em><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/1200px-Facebook_f_logo_%282021%29.svg.png" alt="facebook"></a>
+        <a href="https://web.whatsapp.com/"><em class="fab fa-whatsapp fa-2x"></em><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1200px-WhatsApp.svg.png" alt="whatsapp"></a>
+      </div>
+    </div>
+  </footer>
 </html>

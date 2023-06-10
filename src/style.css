@@ -18,10 +18,74 @@
 
 .search-form {
   margin-top: 20px;
+  
 }
 
 .body {
   display: center;
+  cursor: url('/ImagenesHU/image01.gif'), auto;
+  
+}
+#buscar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+font-family: Arial;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+#ordenar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+font-family: Arial;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+#listaPeliculas{
+  border-radius: 8px;
+  font-family: Arial;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+#filtrar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+font-family: Arial;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+#añoDeLanzamiento{
+  border-radius: 8px;
+  font-family: Arial;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+#director{
+  border-radius: 8px;
+  font-family: Arial;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none
+
 }
 li {
   list-style: none;
@@ -35,6 +99,32 @@ li {
   margin: 0 auto;
   display: inline-block;
 }
+
+#interactive-cursor {
+  position: fixed;
+  width: 32px; /* Ajusta el ancho según el tamaño de tu GIF */
+  height: 32px; /* Ajusta la altura según el tamaño de tu GIF */
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url('/ImagenesHU/image01.gif');
+}
+
+footer {
+  background-color: whitesmoke;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: black;
+  margin: 0 10px;
+}
+.profiles{
+  width: 30px;
+  display: inline-block;
+  height: auto;
+  
+}
+
 
 @media (min-width: 768px) {
   .iframe-header {

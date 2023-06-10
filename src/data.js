@@ -14,3 +14,4 @@ export function buscarPeliculas(pelis, titulo) {
 
   return peliculasEncontradas;
 }
+
