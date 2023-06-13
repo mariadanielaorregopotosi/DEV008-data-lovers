@@ -9,7 +9,7 @@
 
 .container img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 #peliculas-container img {
   border-radius: 36px 36px 36px 36px;
@@ -19,6 +19,10 @@
 .search-form {
   margin-top: 20px;
   
+}
+
+#gif {
+  position: absolute;
 }
 
 .body {
@@ -32,55 +36,47 @@
   background-image: -o-linear-gradient(top, whitesmoke, grey);
   background-image: linear-gradient(to bottom, whitesmoke, grey);
   border-radius: 8px;
-font-family: Arial;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#listaPeliculas{
+  width: 200px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+#limpiar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
   color: black;
   font-size: 8px;
   padding: 8px;
   text-decoration: none;
 }
 #ordenar{
-  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
-  background-image: -moz-linear-gradient(top, whitesmoke, grey);
-  background-image: -o-linear-gradient(top, whitesmoke, grey);
-  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  width: 230px;
   border-radius: 8px;
-font-family: Arial;
-  color: black;
-  font-size: 8px;
-  padding: 8px;
-  text-decoration: none;
-}
-#listaPeliculas{
-  border-radius: 8px;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 8px;
     padding: 8px;
     text-decoration: none;
 }
-#filtrar{
-  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
-  background-image: -moz-linear-gradient(top, whitesmoke, grey);
-  background-image: -o-linear-gradient(top, whitesmoke, grey);
-  background-image: linear-gradient(to bottom, whitesmoke, grey);
+#directores{
+  width: 230px;
   border-radius: 8px;
-font-family: Arial;
-  color: black;
-  font-size: 8px;
-  padding: 8px;
-  text-decoration: none;
-}
-#añoDeLanzamiento{
-  border-radius: 8px;
-  font-family: Arial;
-    color: black;
-    font-size: 8px;
-    padding: 8px;
-    text-decoration: none;
-}
-#director{
-  border-radius: 8px;
-  font-family: Arial;
+  font-family: 'Poppins', sans-serif;
     color: black;
     font-size: 8px;
     padding: 8px;
@@ -98,15 +94,6 @@ li {
   text-align: center;
   margin: 0 auto;
   display: inline-block;
-}
-
-#interactive-cursor {
-  position: fixed;
-  width: 32px; /* Ajusta el ancho según el tamaño de tu GIF */
-  height: 32px; /* Ajusta la altura según el tamaño de tu GIF */
-  pointer-events: none;
-  z-index: 9999;
-  background-image: url('/ImagenesHU/image01.gif');
 }
 
 footer {

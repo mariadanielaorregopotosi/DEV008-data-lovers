@@ -1,4 +1,4 @@
-import { getData, buscarPeliculas } from "./data.js";
+import { getData, buscarPeliculas, ordenarPeliculas } from "./data.js";
 const peliculas = getData();
 //console.log(peliculas);
 
@@ -11,7 +11,18 @@ function mostrarPeliculas(dataset) {
   }
 }
 
+document.addEventListener("mousemove", function(event) {
+  const gif = document.getElementById("gif");
+  const x = event.clientX - gif.width / 2;
+  const y = event.clientY - gif.height / 2;
+  gif.style.left = x + "px";
+  gif.style.top = y + "px";
+});
+
+
 mostrarPeliculas(peliculas);
+const peliculasOrdenadas = ordenarPeliculas(peliculas, "year")
+mostrarPeliculas(peliculasOrdenadas);
 
 function inicio() {
   const botonbusqueda = document.getElementById("buscar");
@@ -25,21 +36,12 @@ function inicio() {
 }
 inicio();
 
-mostrarPeliculas(peliculas);
+const selectOrdenar = document.getElementById("ordenar");
+selectOrdenar.addEventListener("change", function () {
+  const tipoDeOrden = document.getElementById("ordenar").value;
+  console.log(tipoDeOrden);
+  const orden = ordenarPeliculas(peliculas, tipoDeOrden);
 
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  const cursor = document.getElementById("interactive-cursor");
-  
-  document.addEventListener("mousemove", function(event) {
-    const x = event.clientX - cursor.offsetWidth / 2;
-    const y = event.clientY - cursor.offsetHeight / 2;
-    cursor.style.left = x + "px";
-    cursor.style.top = y + "px";
-  });
+  mostrarPeliculas(orden);
+  console.log(orden);
 });
-
-
-mostrarPeliculas(peliculas);
-

@@ -4,9 +4,14 @@
     <meta charset="utf-8" />
     <title>Data de Peliculas</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div id="interactive-cursor"></div>
+    <img id="gif" src="https://pa1.aminoapps.com/6611/9a69bd112b266c1545b4685ea6055c152e3d5125_hq.gif" width="70px" alt="GIF">
+    <script src="main.js"></script>
     <div class="container">
       <img
         src="https://i0.wp.com/www.sir-apfelot.de/wp-content/uploads/2017/03/studio-ghibli-logo-620x288.png"
@@ -19,14 +24,14 @@
           id="listaPeliculas"
           placeholder="Buscar Películas..."
         />
-        <button id="buscar" type="submit">Buscar</button>
-        <select id="añoDeLanzamiento">
-          <option >Año de lanzamiento</option>
-          <option>A-Z</option>
-          <option>Z-A</option>
+        <button id="buscar" type="submit"><strong>BUSCAR</strong></button>
+        <select id="ordenar"> 
+          <option value="year">Año de lanzamiento</option>
+          <option value= "az">A-Z</option>
+          <option value="za">Z-A</option>
         </select>
-        <button type = "submit" id="ordenar">Ordenar</button>
-        <select id="director">
+      
+        <select id="directores">
           <option>Hayao Miyazaki</option>
           <option>Isao Takahata</option>
           <option>Yoshifumi Kondō</option>
@@ -34,8 +39,7 @@
           <option>Gorō Miyazaki</option>
           <option>Hiromasa Yonebayashi</option>
         </select>
-        <button type = "submit" id="filtrar">Filtrar</button>
-      </form>
+        <button id = "limpiar"><strong>LIMPIAR</strong></button>
     </div>
 
     <ul id="peliculas-container"></ul>
