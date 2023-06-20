@@ -60,3 +60,11 @@ export function ordenarPeliculas(peliculas, tipoDeOrden) {
   }
   return peliculas;
 }
+
+export function filtrarPeliculas(peliculas, tipoFiltrado) {
+  console.log("loquesea")
+  return peliculas.filter(
+    (pelicula) => pelicula.director.toLowerCase() === tipoFiltrado
+    
+  );
+}

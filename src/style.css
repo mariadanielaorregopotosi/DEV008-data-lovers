@@ -6,6 +6,16 @@
   text-align: center;
   list-style: none;
 }
+h1{
+  display: center;
+  justify-content: column, center;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
 
 .container img {
   max-width: 100%;
@@ -73,7 +83,7 @@
     padding: 8px;
     text-decoration: none;
 }
-#directores{
+#director{
   width: 230px;
   border-radius: 8px;
   font-family: 'Poppins', sans-serif;
