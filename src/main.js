@@ -6,7 +6,7 @@ function mostrarPeliculas(dataset) {
   const contenedor = document.getElementById("peliculas-container");
   contenedor.innerHTML = "";
   for (let i = 0; i < dataset.length; i++) {
-    const plantilla = `<li><img src = ${dataset[i].poster}></img><p></p> ${dataset[i].title} </li>`;
+    const plantilla = `<li><img src = ${dataset[i].poster}></img><h1>${dataset[i].title}</h1><p2>${dataset[i].director}</p2> </li>`;
     contenedor.innerHTML += plantilla;
   }
 }
