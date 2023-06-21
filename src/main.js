@@ -6,7 +6,7 @@ function mostrarPeliculas(dataset) {
   const contenedor = document.getElementById("peliculas-container");
   contenedor.innerHTML = "";
   for (let i = 0; i < dataset.length; i++) {
-    const plantilla = `<li><img src = ${dataset[i].poster}></img><h1>${dataset[i].title}</h1><p2>${dataset[i].director}</p2> </li>`;
+    const plantilla = `<li><img src = ${dataset[i].poster}></img><h1>${dataset[i].title}</h1><p2>${dataset[i].director}</li>`;
     contenedor.innerHTML += plantilla;
   }
 }
@@ -44,15 +44,17 @@ selectOrdenar.addEventListener("change", function () {
   const orden = ordenarPeliculas(peliculas, tipoDeOrden);
 
   mostrarPeliculas(orden);
-  console.log(orden);
 });
 
 const selectDirectores = document.getElementById("director");
 selectDirectores.addEventListener("change", function () {
   const tipoDirector = document.getElementById("director").value;
-  console.log(tipoDirector);
   const directores = filtrarPeliculas(peliculas,tipoDirector);
 
   mostrarPeliculas(directores);
-  console.log(directores)
 } )
+ 
+
+
+
+

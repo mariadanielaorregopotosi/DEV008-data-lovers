@@ -68,3 +68,5 @@ export function filtrarPeliculas(peliculas, tipoFiltrado) {
     
   );
 }
+
+
