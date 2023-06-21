@@ -10,7 +10,6 @@ export function buscarPeliculas(pelis, titulo) {
     pelicula.title.toLowerCase().includes(titulo.toLowerCase())
   );
 
-  console.log(peliculasEncontradas);
 
   return peliculasEncontradas;
 }
@@ -62,7 +61,7 @@ export function ordenarPeliculas(peliculas, tipoDeOrden) {
 }
 
 export function filtrarPeliculas(peliculas, tipoFiltrado) {
-  console.log("loquesea")
+
   return peliculas.filter(
     (pelicula) => pelicula.director.toLowerCase() === tipoFiltrado
     

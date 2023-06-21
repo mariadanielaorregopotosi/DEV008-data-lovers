@@ -40,7 +40,7 @@ inicio();
 const selectOrdenar = document.getElementById("ordenar");
 selectOrdenar.addEventListener("change", function () {
   const tipoDeOrden = document.getElementById("ordenar").value;
-  console.log(tipoDeOrden);
+
   const orden = ordenarPeliculas(peliculas, tipoDeOrden);
 
   mostrarPeliculas(orden);
