@@ -3,22 +3,15 @@ const peliculas = getData();
 //console.log(peliculas);
 
 function mostrarPeliculas(dataset) {
-  const peliculasContainer = document.getElementById("peliculas-container");
-  dataset.forEach((pelicula) => {
-    const peliculaElement = document.createElement("div");
-    peliculaElement.innerHTML = `
-    <li><img src="${pelicula.poster}">
-      <h1>${pelicula.title}</h1>
-      <p2><strong>${pelicula.director}</strong></p2>
-      <details>
-        <summary>Mostrar Descripción</summary>
-        <p3>${pelicula.description}</p3>
-      </details>
-    </li>
-  `;
-
-    peliculasContainer.appendChild(peliculaElement);
-  });
+  const contenedor = document.getElementById("peliculas-container");
+  contenedor.innerHTML = "";
+  for (let i = 0; i < dataset.length; i++) {
+    const plantilla = `<li><img src = ${dataset[i].poster}></img><p></p> ${dataset[i].title} <details>
+    <summary>Mostrar Descripción</summary>
+    <p3>${dataset[i].description}</p3>
+  </details></li>`;
+    contenedor.innerHTML += plantilla;
+  }
 }
 
 document.addEventListener("mousemove", function (event) {
