@@ -1,9 +1,4 @@
-import {
-  getData,
-  buscarPeliculas,
-  ordenarPeliculas,
-  filtrarPeliculas,
-} from "./data.js";
+import { getData, buscarPeliculas, ordenarPeliculas, filtrarPeliculas} from "./data.js";
 const peliculas = getData();
 //console.log(peliculas);
 
@@ -36,7 +31,7 @@ document.addEventListener("mousemove", function (event) {
 
 mostrarPeliculas(peliculas);
 
-const peliculasOrdenadas = ordenarPeliculas(peliculas, "year");
+const peliculasOrdenadas = ordenarPeliculas(peliculas, "year")
 
 mostrarPeliculas(peliculasOrdenadas);
 
@@ -55,17 +50,19 @@ inicio();
 const selectOrdenar = document.getElementById("ordenar");
 selectOrdenar.addEventListener("change", function () {
   const tipoDeOrden = document.getElementById("ordenar").value;
-
+  console.log(tipoDeOrden);
   const orden = ordenarPeliculas(peliculas, tipoDeOrden);
 
   mostrarPeliculas(orden);
+  console.log(orden);
 });
 
 const selectDirectores = document.getElementById("director");
 selectDirectores.addEventListener("change", function () {
   const tipoDirector = document.getElementById("director").value;
-
-  const directores = filtrarPeliculas(peliculas, tipoDirector);
+  console.log(tipoDirector);
+  const directores = filtrarPeliculas(peliculas,tipoDirector);
 
   mostrarPeliculas(directores);
-});
+  console.log(directores)
+} )
