@@ -43,19 +43,19 @@ inicio();
 const selectOrdenar = document.getElementById("ordenar");
 selectOrdenar.addEventListener("change", function () {
   const tipoDeOrden = document.getElementById("ordenar").value;
-  console.log(tipoDeOrden);
+  
   const orden = ordenarPeliculas(peliculas, tipoDeOrden);
 
   mostrarPeliculas(orden);
-  console.log(orden);
+  
 });
 
 const selectDirectores = document.getElementById("director");
 selectDirectores.addEventListener("change", function () {
   const tipoDirector = document.getElementById("director").value;
-  console.log(tipoDirector);
+  
   const directores = filtrarPeliculas(peliculas,tipoDirector);
 
   mostrarPeliculas(directores);
-  console.log(directores)
-} )
+  
+} );
