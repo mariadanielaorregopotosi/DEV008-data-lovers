@@ -59,13 +59,3 @@ export function ordenarPeliculas(peliculas, tipoDeOrden) {
   }
   return peliculas;
 }
-
-export function filtrarPeliculas(peliculas, tipoFiltrado) {
-
-  return peliculas.filter(
-    (pelicula) => pelicula.director.toLowerCase() === tipoFiltrado
-    
-  );
-}
-
-
