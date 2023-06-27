@@ -14,3 +14,57 @@ export function buscarPeliculas(pelis, titulo) {
 
   return peliculasEncontradas;
 }
+
+export function ordenarPeliculas(peliculas, tipoDeOrden) {
+  if (tipoDeOrden === "year") {
+    peliculas.sort(function (a, b) {
+      const parametroa = a.release_date.toLowerCase();
+      const parametrob = b.release_date.toLowerCase();
+
+      if (parametroa === parametrob) {
+        return 0;
+      }
+      if (parametroa < parametrob) {
+        return -1;
+      }
+      return 1;
+    });
+  }
+  if (tipoDeOrden === "az") {
+    peliculas.sort(function (a, b) {
+      const parametroa = a.title.toLowerCase();
+      const parametrob = b.title.toLowerCase();
+
+      if (parametroa === parametrob) {
+        return 0;
+      }
+      if (parametroa < parametrob) {
+        return -1;
+      }
+      return 1;
+    });
+  }
+  if (tipoDeOrden === "za") {
+    peliculas.sort(function (a, b) {
+      const parametroa = a.title.toLowerCase();
+      const parametrob = b.title.toLowerCase();
+
+      if (parametroa === parametrob) {
+        return 0;
+      }
+      if (parametroa > parametrob) {
+        return -1;
+      }
+      return 1;
+    });
+  }
+  return peliculas;
+}
+
+export function filtrarPeliculas(peliculas, tipoFiltrado) {
+
+  return peliculas.filter(
+    (pelicula) => pelicula.director.toLowerCase() === tipoFiltrado
+    
+  );
+}

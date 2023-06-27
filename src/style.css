@@ -6,10 +6,20 @@
   text-align: center;
   list-style: none;
 }
+h1{
+  display: center;
+  justify-content: column, center;
+  flex-direction: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
 
 .container img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 #peliculas-container img {
   border-radius: 36px 36px 36px 36px;
@@ -18,11 +28,127 @@
 
 .search-form {
   margin-top: 20px;
+  
+}
+
+#gif {
+  position: absolute;
 }
 
 .body {
   display: center;
+  cursor: url('/ImagenesHU/image01.gif'), auto;
+  
 }
+#buscar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#listaPeliculas{
+  width: 230px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+#limpiar{
+  background-image: -webkit-linear-gradient(top, whitesmoke, grey);
+  background-image: -moz-linear-gradient(top, whitesmoke, grey);
+  background-image: -o-linear-gradient(top, whitesmoke, grey);
+  background-image: linear-gradient(to bottom, whitesmoke, grey);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 8px;
+  padding: 8px;
+  text-decoration: none;
+}
+#ordenar{
+  width: 230px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none;
+}
+#director{
+  width: 230px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+    color: black;
+    font-size: 8px;
+    padding: 8px;
+    text-decoration: none
+   
+}
+
+#peliculas-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+div{
+  background-color: white;
+}
+
+#peliculas-container li {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+#peliculas-container img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+
+}
+
+#peliculas-container h1,
+#peliculas-container p2,
+#peliculas-container p3 {
+  margin: 5px 0;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#peliculas-container details {
+  margin-top: 10px;
+  background-color:transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+#peliculas-container summary {
+  cursor: pointer;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+#peliculas-container p {
+  display: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
+
+#peliculas-container details[open] p {
+  display: block;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
 li {
   list-style: none;
   width: 220px; /* Ancho de la tarjeta */
@@ -34,7 +160,25 @@ li {
   text-align: center;
   margin: 0 auto;
   display: inline-block;
+
 }
+
+footer {
+  background-color: whitesmoke;
+  padding: 20px 10px;
+}
+
+footer a {
+  color: black;
+  margin: 0 10px;
+}
+.profiles{
+  width: 30px;
+  display: inline-block;
+  height: auto;
+  
+}
+
 
 @media (min-width: 768px) {
   .iframe-header {
