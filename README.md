@@ -35,7 +35,7 @@ GhibliStudio es una página web dedicada a la visualización de películas del f
 
 ![Página Principal](/ImagenesHU/sinopsis1.jpg)
 
-![Página Principal](/ImagenesHU/sinopsis1.jpg)
+![Página Principal](/ImagenesHU/sinopsis2.jpg)
 
 
 
