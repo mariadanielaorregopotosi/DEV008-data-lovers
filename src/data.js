@@ -10,7 +10,6 @@ export function buscarPeliculas(pelis, titulo) {
     pelicula.title.toLowerCase().includes(titulo.toLowerCase())
   );
 
-
   return peliculasEncontradas;
 }
 
@@ -58,4 +57,10 @@ export function ordenarPeliculas(peliculas, tipoDeOrden) {
     });
   }
   return peliculas;
+}
+export function filtrarPeliculas(peliculas, tipoFiltrado) {
+
+  return peliculas.filter(
+    (pelicula) => pelicula.director.toLowerCase() === tipoFiltrado
+  );
 }
